@@ -1,0 +1,25 @@
+.btn {
+  border-radius: $btn-border-radius;
+  border: 0;
+  padding: 10px 18px;
+
+  &.envy,
+  &.glacier,
+  &.moon-mist,
+  &.lunar-green,
+  &.gurkha,
+  &.xanadu,
+  &.carnation,
+  &.chesnut-rose,
+  &.yellow_sea {
+    color: #fff;
+  }
+
+  &.transparent {
+    color: #fff;
+  }
+
+  &.outlined {
+    border: 1px solid #fff;
+  }
+}

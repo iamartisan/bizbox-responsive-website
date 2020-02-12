@@ -1,0 +1,166 @@
+header {
+  @include layout-fix();
+
+  height: 100vh;
+  padding-top: 45px;
+  text-align: center;
+  background-image: url("../images/backgrounds/header_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-weight: 400;
+  }
+
+  h1, h2, h5 {
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+
+  //Message
+  .header-messages {
+    height: 60%;
+  }
+
+  //Latest Jobs Links
+  .header-links {
+    height: 20%;
+    background-color: $lunar_green;
+
+    .container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link-btn {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    input.link-text,
+    textarea.link-text {
+      border: 0;
+      padding: 10px 15px;
+      text-overflow: ellipsis;
+      width: 60%;
+      background-color: #373737;
+      color: #fff;
+    }
+
+    textarea.link-text {
+      display: none;
+      resize: none;
+    }
+  }
+
+  //Affiliate Logos
+  .header-affiliates {
+    height: 20%;
+    background-color: #fff;
+
+    .container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      img {
+        height: 30px;
+
+        & + img {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+
+  //Media Queries
+  @media (max-width: $lg-breakpoint) {
+
+    .header-links {
+
+      input.link-text {
+        width: 90%;
+      }
+    }
+
+  }
+
+  @media (max-width: $md-breakpoint) {
+
+    .header-messages {
+      height: 50%;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h5 {
+        font-size: 1rem;
+      }
+    }
+
+
+    .header-links {
+      height: 30%;
+
+      .container {
+        flex-direction: column;
+      }
+
+      input, textarea.link-text {
+        width: 100%;
+      }
+
+      input.link-btn {
+        border-radius: $btn-border-radius;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      textarea.link-text {
+        display: block;
+      }
+
+      input.link-text {
+        display: none;
+      }
+    }
+
+
+    .header-affiliates {
+
+      .container {
+        justify-content: space-between;
+
+        img {
+          height: 20px;
+
+          & + img {
+            margin: auto;
+          }
+        }
+      }
+
+    }
+
+  }
+
+
+}

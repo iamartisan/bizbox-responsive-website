@@ -1,0 +1,124 @@
+#about_us,
+#our_expertise,
+#clients,
+#candidates,
+#meet_the_team,
+#contact {
+  min-height: calc(100vh - 300px);
+  position: relative;
+  padding-top: 150px;
+}
+
+#about_us,
+#our_expertise,
+#clients,
+#meet_the_team,
+#contact {
+  padding-bottom: 40px;
+}
+
+//Misc
+.blockquote {
+  position: relative;
+  font-family: 'Sanchez', serif;
+  font-size: 2vw;
+  line-height: 1.5rem;
+  font-style: italic;
+
+  &.left:before {
+    content: '\201C';
+    position: absolute;
+    top: 0.25em;
+    color: unset;
+    font-size: 6em;
+    margin: auto;
+  }
+
+  &.right:before {
+    content: '\201D';
+    position: absolute;
+    top: 0.25em;
+    color: unset;
+    font-size: 6em;
+    margin: auto;
+  }
+}
+
+
+//Page Title
+.page-title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: $lunar_green;
+  font-family: "Open Sans Condensed", sans-serif;
+
+  font-size: 5rem;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+
+  &:after {
+    position: relative;
+    top: 10px;
+    display: block;
+    width: 10px;
+    margin: auto;
+    content: "";
+    border-top: 12px solid $lunar_green;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }
+
+  @media (max-width: $sm-breakpoint) {
+    height: 65px;
+    font-size: 3rem;
+  }
+}
+
+
+//Footer
+footer {
+
+  .notes {
+    background-color: #424242;
+    padding: 20px;
+
+    .message {
+      padding-top: 0;
+      display: flex;
+      justify-content: center;
+
+      .message-wrapper {
+        color: #fff;
+        padding: 10px 20px 10px 10px;
+        border-radius: 5px;
+        background-color: #393939;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+      }
+
+      .blockquote {
+        align-self: start;
+
+        &.left:before,
+        &.right:before {
+          color: #fff;
+          font-size: 2em;
+        }
+      }
+    }
+  }
+
+  .copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $lunar_green;
+    padding: 20px;
+    color: $yellow_sea
+  }
+}

@@ -1,0 +1,45 @@
+#completed_assignments {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: $glacier;
+
+  .data-navigator {
+    height: 20px;
+    width: 20px;
+    background: $lunar_green;
+    font-weight: bold;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & + .data-navigator {
+      margin-left: 8px;
+    }
+  }
+
+  .assignment-data {
+    margin-bottom: 10px;
+
+    .data-caption,
+    .data-value {
+      color: #fff;
+      padding: 15px;
+    }
+
+    .data-caption {
+      background-color: $lunar_green;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: $sm-breakpoint) {
+        align-items: flex-start;
+      }
+    }
+
+    .data-value {
+      background-color: rgba(255, 255, 255, .2);;
+    }
+  }
+}

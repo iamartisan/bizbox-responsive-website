@@ -1,0 +1,98 @@
+#meet_the_team {
+
+  .profiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+    & > .member {
+      height: 450px;
+      border: 5px solid $lunar_green;
+
+      display: flex;
+      flex-direction: column;
+
+      .user {
+        height: 70%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .title {
+        height: 20%;
+        background-color: $lunar_green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1rem;
+      }
+
+      .contacts {
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $mine-shaft;
+
+        & > * {
+          & + * {
+            margin-left: 10px;
+          }
+        }
+
+        .mobile-num {
+          font-size: 1.4rem;
+          margin-left: 5px;
+          color: #aaa;
+        }
+      }
+    }
+
+  }
+
+  //images
+  .user1 {
+    background-image: url("../images/team/nabil_dar.jpg");
+  }
+  .user2 {
+    background-image: url("../images/team/joanne_shand.jpg");
+  }
+  .user3 {
+    background-image: url("../images/team/veronica_hadi.jpg");
+  }
+  .user4 {
+    background-image: url("../images/team/matt_sellwood.jpg");
+  }
+  .user5 {
+    background-image: url("../images/team/hedyeh_esfandiyari.jpg");
+  }
+  .user6 {
+    background-image: url("../images/team/laur_tait.jpg");
+  }
+  .user7 {
+    background-image: url("../images/team/madiha_ahmed.jpg");
+  }
+  .user8 {
+    background-image: url("../images/team/charlie_sklar.jpg");
+  }
+
+
+  @media (max-width: $md-breakpoint) {
+    .profiles {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: $sm-breakpoint) {
+    .profiles {
+      grid-template-columns: 1fr;
+
+      & > .member {
+        height: 400px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,42 @@
+.testimonials {
+  padding-top: 50px;
+}
+
+#clients .testimonials,
+#candidates .testimonials {
+  .status-bar {
+    height: 6px;
+    width: 30px;
+    background: #ccc;
+
+    &.filled {
+      background-color: #727878;
+    }
+
+    & + .status-bar {
+      margin-left: 6px;
+    }
+  }
+}
+
+#clients {
+  background: $mine-shaft;
+  color: #fff;
+
+  .client-overview {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../images/backgrounds/clients_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .testimonials {
+    .blockquote {
+      &.left:before,
+      &.right:before {
+        color: $glacier;
+      }
+    }
+  }
+}

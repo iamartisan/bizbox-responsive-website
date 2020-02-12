@@ -1,0 +1,20 @@
+#candidates {
+  background-color: $glacier;
+  color: #fff;
+
+  .candidates-overview {
+    padding-bottom: 50px;
+  }
+
+  .testimonials {
+    background-color: #77C9D5;
+    padding-bottom: 40px;
+
+    .blockquote {
+      &.left:before,
+      &.right:before {
+        color: $lunar_green;
+      }
+    }
+  }
+}

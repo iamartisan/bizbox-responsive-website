@@ -1,0 +1,32 @@
+.navbar {
+
+  .navbar-brand img {
+    height: 25px;
+  }
+
+  .navbar-collapse {
+    font-size: 1rem;
+
+    .nav-link {
+      font-weight: bold;
+      &:active {
+        color: #000;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    padding: 5px 10px;
+    background-color: $glacier;
+    border-radius: 0;
+
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px 0;
+    }
+  }
+
+}
